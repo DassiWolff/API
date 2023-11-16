@@ -30,7 +30,9 @@ const update = async () => {
         var firstName = document.getElementById("firstName3").value
         var lastName = document.getElementById("lastName3").value
         var User = { userId, userName, password, firstName, lastName }
+        //Clean code -remove console.log
         console.log(User)
+        //Use `` for js strings with variables ex:userName=`${userNameLogin}`
         var url = 'api/users' + "/" + userId
         const res = await fetch(url, {
             method: 'PUT',
@@ -40,12 +42,15 @@ const update = async () => {
             body: JSON.stringify(User)
 
         });
-    const dataPost = await res.json();
+        const dataPost = await res.json();
+    //Check response status!!
+    //User updated
     alert("עודכן")
     console.log(dataPost)
     }
 
-catch (er) {
+    catch (er) {
+    //log the error to the console
     alert(er.message)
 }
 
