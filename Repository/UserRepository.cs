@@ -1,5 +1,8 @@
 ﻿using Entities;
 using System.Text.Json;
+//Rename folder name to Repositories
+//Interface IUserRepository is missing
+
 
 namespace Repository
 {

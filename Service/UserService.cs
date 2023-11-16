@@ -1,6 +1,7 @@
 ﻿using Entities;
 using Repository;
-
+//Rename folder name to Services
+//Interface IUserService is missing
 namespace Service
 {
     public class UserService
